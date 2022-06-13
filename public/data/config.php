@@ -25,7 +25,7 @@ Setting('DEFAULT_LOCALE', 'en');
 // This is used to define the first day of a week for calendar views,
 // leave empty to use the locale default
 // Needs to be a number where Sunday = 0, Monday = 1 and so forth
-Setting('CALENDAR_FIRST_DAY_OF_WEEK', '');
+Setting('CALENDAR_FIRST_DAY_OF_WEEK', '1');
 
 // If calendars should show week numbers
 Setting('CALENDAR_SHOW_WEEK_OF_YEAR', true);
@@ -39,7 +39,7 @@ Setting('MEAL_PLAN_FIRST_DAY_OF_WEEK', '');
 // this here is used to format all money values,
 // so doesn't really matter, but needs to be the
 // ISO 4217 code of the currency ("USD", "EUR", "GBP", etc.)
-Setting('CURRENCY', 'USD');
+Setting('CURRENCY', 'INR');
 
 // When running grocy in a subdirectory, this should be set to the relative path, otherwise empty
 // It needs to be set to the part (of the URL) AFTER the document root,
@@ -124,7 +124,7 @@ Setting('TPRINTER_CONNECTOR', '/dev/usb/lp0'); // Printer device (does only matt
 // (set the setting to "false" to disable the corresponding part, which should be self explanatory)
 Setting('FEATURE_FLAG_STOCK', true);
 Setting('FEATURE_FLAG_SHOPPINGLIST', true);
-Setting('FEATURE_FLAG_RECIPES', true);
+Setting('FEATURE_FLAG_RECIPES', false);
 Setting('FEATURE_FLAG_CHORES', true);
 Setting('FEATURE_FLAG_TASKS', true);
 Setting('FEATURE_FLAG_BATTERIES', true);
